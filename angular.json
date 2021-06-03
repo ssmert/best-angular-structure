@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/best-angular-structure",
+            "outputPath": "dist",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -31,7 +31,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/scss/custom.scss"
             ],
             "scripts": []
           },
@@ -40,13 +41,13 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "10mb",
+                  "maximumError": "30mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "10mb",
+                  "maximumError": "30mb"
                 }
               ],
               "fileReplacements": [
@@ -58,6 +59,24 @@
               "outputHashing": "all"
             },
             "development": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "10mb",
+                  "maximumError": "30mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "10mb",
+                  "maximumError": "30mb"
+                }
+              ],
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.dev.ts"
+                }
+              ],
               "buildOptimizer": false,
               "optimization": false,
               "vendorChunk": true,

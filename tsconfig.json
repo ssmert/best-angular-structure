@@ -6,6 +6,7 @@
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
+    "noImplicitAny": false,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
@@ -19,7 +20,12 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@core/*": [ "src/app/core/*" ],
+      "@modules/*": [ "src/app/modules/*" ],
+      "@shared/*": [ "src/app/shared/*" ],
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
