@@ -2,8 +2,9 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormErrorMessageComponent } from './components/form-error-message.component';
 import { FormFocusDirective } from './directives/form-focus.directive';
-import { FooterComponent } from './layout/footer/footer.component';
-import { HeaderComponent } from './layout/header/header.component';
+import { SortableDirective } from './directives/sortable.directive';
+import { FooterComponent } from './layouts/footer/footer.component';
+import { HeaderComponent } from './layouts/header/header.component';
 import { MaskingPipe } from './pipes/masking.pipe';
 
 @NgModule({
@@ -12,6 +13,7 @@ import { MaskingPipe } from './pipes/masking.pipe';
     HeaderComponent,
     FormErrorMessageComponent,
     FormFocusDirective,
+    SortableDirective,
     MaskingPipe
   ],
   imports: [CommonModule],
@@ -20,6 +22,7 @@ import { MaskingPipe } from './pipes/masking.pipe';
     HeaderComponent,
     FormErrorMessageComponent,
     FormFocusDirective,
+    SortableDirective,
     MaskingPipe],
 })
 export class SharedModule { }

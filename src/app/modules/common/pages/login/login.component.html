@@ -1,0 +1,12 @@
+<p>login works!</p>
+
+<div class="container">
+    <form formFocus [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="userId">아이디</label>
+            <input type="text" class="form-control" formControlName="userId" id="userId" [ngClass]="{ 'is-invalid': f.userId.errors && (f.userId.dirty || isSubmit)}" />
+            <error-message class="invalid-feedback" [control]="f.userId" [show]="isSubmit"></error-message>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>

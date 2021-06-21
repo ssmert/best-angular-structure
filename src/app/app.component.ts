@@ -19,15 +19,13 @@ export class AppComponent {
    */
   constructor(private router: Router,
     private config: ConfigurationService) {
-    console.log('config', config);
-
     this.router.events.subscribe((evt) => {
       if (!(evt instanceof NavigationEnd)) {
         return;
       }
 
-      // home 화면이 아닐 경우
-      if (evt.url !== '/home') {
+      // main 화면이 아닐 경우
+      if (evt.url !== '/main') {
       }
     });
   }

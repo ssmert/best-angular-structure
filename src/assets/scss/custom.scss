@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+// 테이블 정렬
+th[sortable] {
+    cursor: pointer;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-select: none;
+    position: relative;
+    &:after,
+    &.asc:after,
+    &.desc:after {
+      font-family: FontAwesome;
+      padding-left: 10px;
+    }
+  
+    &:after {
+      content: '\f0dc';
+      color: #ddd;
+    }
+    &.asc:after {
+      content: '\f0de';
+      color: #767676;
+    }
+    &.desc:after {
+      content: '\f0dd';
+      color: #767676;
+    }
+  }

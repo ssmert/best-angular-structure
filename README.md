@@ -1,27 +1,39 @@
-# BestAngularStructure
+# best-angular-structure
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.2.
+# 기술 스택
 
-## Development server
+![Angular](https://img.shields.io/badge/Angular-11.2.3-red.svg)
+![bootstrap](https://img.shields.io/badge/bootstrap-4.5.0-green.svg)
+![ng-bootstrap](https://img.shields.io/badge/ng_bootstrap-9.1.2-green.svg)
+![typescript](https://img.shields.io/badge/typescript-4.1.5-blueviolet.svg)
+![ng-block-ui](https://img.shields.io/badge/ng_block_ui-3.0.2-blue.svg)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+# 브랜치
 
-## Code scaffolding
+운영 : master
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+개발 : develop
 
-## Build
+# 설치
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```shell
+npm i
+```
 
-## Running unit tests
+# 실행
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```shell
+로컬 : npm start
+개발 : npm run start:dev
+운영 : npm run start:prod
+```
 
-## Running end-to-end tests
+# 빌드
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+빌드 폴더 : dist/
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```shell
+로컬 : npm start
+개발 : npm run build:dev
+운영 : npm run build:prod
+```

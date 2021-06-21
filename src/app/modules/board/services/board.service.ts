@@ -1,9 +1,11 @@
 import { Injectable } from '@angular/core';
 import { RestService } from '@core/services/rest.service';
 
-@Injectable({ providedIn: 'root' })
-export class UserService {
-  private uri: string = 'users';
+@Injectable({
+  providedIn: 'root'
+})
+export class BoardService {
+  private uri: string = 'boards';
 
   // ! ************************************** 초기화 메서드 ***************************************
 

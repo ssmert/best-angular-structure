@@ -2,9 +2,6 @@ import { Directive, ElementRef, HostListener } from '@angular/core';
 
 @Directive({ selector: '[formFocus]' })
 export class FormFocusDirective {
-    /**
-     * @param el 엘리먼트
-     */
     constructor(private el: ElementRef) { }
 
     @HostListener('submit')
